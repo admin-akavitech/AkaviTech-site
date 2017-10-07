@@ -7,6 +7,8 @@ body, html{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body.mainbg{
@@ -24,7 +26,7 @@ main{
 
 div.mainContent{
     height: 50%;
-    width: 40%;
+    width: 100%;
 
     position: absolute;
     top: 0;
@@ -53,4 +55,31 @@ input[type=button]{
     text-align: center;
     color: black;
     background-color: white;
+}
+
+a.contactButton{
+    border-bottom-left-radius: 35px;
+}
+
+.circlebg{
+    display: inline-block;
+    width: 115px;
+    height: 120px;
+    margin: 7px;
+    padding-top: 20px;
+    border-radius: 70px;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+span.launchtimer{
+    line-height: 70px;
+    font-size: 60px;
+}
+
+p{
+    font-size: 1.4em;
 }
