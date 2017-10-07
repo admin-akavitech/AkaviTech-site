@@ -6,8 +6,10 @@ html
         //materializecss css file
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
 
-        //google icon fonts
+        //google font icons
         link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        //font awesome icons
+        link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet")
 
         //jquery file
         script(type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js")
@@ -18,7 +20,44 @@ html
         //viewport scaling
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
+
+        //our own css file
+        link(rel="stylesheet" href="public/css/styles.css")
+
         title AkaviTech
 
-    body
-        h1.center Akavi Info Technologies
+    main
+        body#mainbg.mainbg
+
+        div.mainContent.center
+            div.row.resetrow
+                h3.white-text Stay tuned.
+            div.row.resetrow
+                h3.white-text We're launching soon.
+
+            div.row.resetrow(style="padding-top: 30px;")
+                h5.white-text Share your contact and we'll notify you
+            div.row
+                div.col.s8.push-s2
+                    input(type="email" id="notifyEmail" placeholder="Email Address" style="border-radius: 35px; background-color: white;").emailBox
+                div.col.s2.push-s2
+                    a.sendButton.white-text
+                        i.medium.material-icons send
+
+            //jquery-ripples effect
+            script(src="/public/js/jquery.ripples-min.js")
+            script(src="/public/js/script.js")
+
+    footer.page-footer.transparent
+        div.row
+            div.col.s6.l3
+                div.row
+                    div.col.s2
+                        i.icon-facebook.icon-2x
+                    div.col.s2
+                        i.icon-twitter.icon-2x
+                    div.col.s2
+                        i.icon-youtube.icon-2x
+                    div.col.s2
+                        i.icon-linkedin.icon-2x
+
