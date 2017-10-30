@@ -18,6 +18,7 @@ app.set('env','production');
 
 app.use(bodyParser.json());
 app.use('/public',express.static(path.join(__dirname,'public')));
+app.use(favicon(path.join(__dirname,'favicon.ico')));
 
 app.get('/',function (req, res) {
     res.render('home');
